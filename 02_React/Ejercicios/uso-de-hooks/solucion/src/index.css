@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Tema oscuro (por defecto) ── */
+:root {
+  --bg: #0f0f13;
+  --bg-surface: #1a1a24;
+  --bg-surface-alt: #23232f;
+  --border: #2e2e3e;
+  --text: #eaeaea;
+  --text-muted: #8888a0;
+  --primary: #7c6af7;
+  --primary-dark: #5b4de0;
+  --danger: #e63946;
+  --success: #2d9b6f;
+  --radius: 10px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+  --transition: 0.2s ease;
+}
+
+/* ── Tema claro ── */
+:root.light {
+  --bg: #f0f0f5;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #e8e8f0;
+  --border: #d0d0e0;
+  --text: #1a1a2e;
+  --text-muted: #6060808;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}

@@ -1,0 +1,42 @@
+/* =============================
+   Reset y variables globales
+   ============================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #0f0f13;
+  --color-surface: #1a1a24;
+  --color-surface-alt: #23232f;
+  --color-border: #2e2e3e;
+  --color-primary: #e63946;
+  --color-primary-dark: #c1121f;
+  --color-text: #eaeaea;
+  --color-text-muted: #8888a0;
+  --color-accent: #f4a261;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+  --font-main: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
