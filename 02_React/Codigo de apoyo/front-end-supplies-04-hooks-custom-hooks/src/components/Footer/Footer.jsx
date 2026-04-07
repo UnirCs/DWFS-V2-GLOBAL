@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "./Footer.css";
-import {GlobalContext} from "../../context/GlobalContext.jsx";
+import {GlobalContext} from "../../context/global/GlobalContext.jsx";
 
 export default function Footer() {
   const { darkMode } = useContext(GlobalContext);

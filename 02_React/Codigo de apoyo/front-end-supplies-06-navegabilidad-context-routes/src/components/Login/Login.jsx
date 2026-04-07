@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import "./Login.css";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../context/auth/AuthContext";
 import { useLogin } from "../../hooks/useLogin";
 
 export default function Login() {

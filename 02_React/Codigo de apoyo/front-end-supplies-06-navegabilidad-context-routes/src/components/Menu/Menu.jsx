@@ -1,8 +1,8 @@
 import React, {useContext} from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css";
-import {GlobalContext} from "../../context/GlobalContext.jsx";
-import {AuthContext} from "../../context/AuthContext.jsx";
+import {GlobalContext} from "../../context/global/GlobalContext.jsx";
+import {AuthContext} from "../../context/auth/AuthContext.jsx";
 
 export default function Menu() {
   const { darkMode, toggleDarkMode } = useContext(GlobalContext);

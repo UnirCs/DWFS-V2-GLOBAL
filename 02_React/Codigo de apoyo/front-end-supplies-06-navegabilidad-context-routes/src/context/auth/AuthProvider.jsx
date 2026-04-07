@@ -1,6 +1,5 @@
-import React, { createContext, useState } from "react";
-
-export const AuthContext = createContext();
+import React, { useState } from "react";
+import { AuthContext } from "./AuthContext";
 
 export const AuthProvider = ({ children }) => {
     // Al inicio no hay usuario logueado
@@ -12,3 +11,4 @@ export const AuthProvider = ({ children }) => {
         </AuthContext.Provider>
     );
 };
+

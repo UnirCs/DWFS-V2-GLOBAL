@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./Profile.css";
-import { AuthContext } from "../../context/AuthContext";
+import { AuthContext } from "../../context/auth/AuthContext";
 import {useLogin} from "../../hooks/useLogin.js";
 
 export default function Profile() {

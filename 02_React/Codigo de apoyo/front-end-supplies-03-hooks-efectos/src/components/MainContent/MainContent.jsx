@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from "react";
 import "./MainContent.css";
-import {GlobalContext} from "../../context/GlobalContext.jsx";
+import {GlobalContext} from "../../context/global/GlobalContext.jsx";
 import {mockProducts} from "../../utils/mockData";
 
 export default function MainContent() {

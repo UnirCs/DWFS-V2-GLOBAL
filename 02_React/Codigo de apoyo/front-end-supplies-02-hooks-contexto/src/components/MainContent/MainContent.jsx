@@ -1,6 +1,6 @@
 import React, {useContext, useState} from "react";
 import "./MainContent.css";
-import {GlobalContext} from "../../context/GlobalContext.jsx";
+import {GlobalContext} from "../../context/global/GlobalContext.jsx";
 
 export default function MainContent() {
     const [email, setEmail] = useState("");

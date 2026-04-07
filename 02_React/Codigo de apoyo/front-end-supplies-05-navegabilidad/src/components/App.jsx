@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {GlobalProvider} from "../context/GlobalContext";
+import {GlobalProvider} from "../context/global/GlobalProvider";
 import Menu from "./Menu/Menu.jsx";
 import MainContent from "./MainContent/MainContent.jsx";
 import Footer from "./Footer/Footer.jsx";

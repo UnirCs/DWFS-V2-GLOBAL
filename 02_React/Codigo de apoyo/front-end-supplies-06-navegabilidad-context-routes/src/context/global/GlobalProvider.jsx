@@ -1,6 +1,5 @@
-import React, { createContext, useState } from "react";
-
-export const GlobalContext = createContext();
+import React, { useState } from "react";
+import { GlobalContext } from "./GlobalContext";
 
 export function GlobalProvider({ children }) {
   const [darkMode, setDarkMode] = useState(false);

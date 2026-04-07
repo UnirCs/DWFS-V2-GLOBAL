@@ -1,6 +1,6 @@
 import React, {useContext, useState} from "react";
 import "./Products.css";
-import {GlobalContext} from "../../context/GlobalContext";
+import {GlobalContext} from "../../context/global/GlobalContext";
 import { useProducts } from "../../hooks/useProducts";
 import { Link } from "react-router-dom";
 
