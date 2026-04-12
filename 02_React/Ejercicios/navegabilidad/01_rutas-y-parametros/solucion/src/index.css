@@ -1,0 +1,199 @@
+/* === Reset y variables globales === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #0f0f13;
+  --color-surface: #1a1a24;
+  --color-surface-alt: #23232f;
+  --color-border: #2e2e3e;
+  --color-primary: #6c8cff;
+  --color-primary-dark: #4a6ae5;
+  --color-text: #eaeaea;
+  --color-text-muted: #8888a0;
+  --color-accent: #f4a261;
+  --color-success: #2ec4b6;
+  --color-error: #e63946;
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: var(--color-surface-alt);
+  padding: 0.15em 0.4em;
+  border-radius: var(--radius-sm);
+  font-size: 0.9em;
+  color: var(--color-accent);
+}
+
+/* === Utilidades comunes para páginas === */
+.page h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.page__intro {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.page__section {
+  margin-top: 2rem;
+}
+
+.page__section h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+.page__section p {
+  margin-bottom: 0.5rem;
+}
+
+.page__list {
+  list-style: none;
+  padding: 0;
+}
+
+.page__list li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page__list li:last-child {
+  border-bottom: none;
+}
+
+/* === User Profile === */
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.user-profile__avatar {
+  font-size: 3rem;
+  background-color: var(--color-surface-alt);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+}
+
+.user-profile__email {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+/* === Products === */
+.products__filters {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.products__filter-btn {
+  background-color: var(--color-surface-alt);
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.products__filter-btn:hover {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border-color: var(--color-primary);
+}
+
+.products__filter-btn--active {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
+  font-weight: 600;
+}
+
+.products__active-filter {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.products__card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.products__card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+.products__card-name {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.products__card-category {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.products__card-price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-success);
+}
+
+.products__empty {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 2rem;
+  font-style: italic;
+}
