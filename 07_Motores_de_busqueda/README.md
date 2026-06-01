@@ -1,5 +1,11 @@
 # Motores de Búsqueda
 
+## Consumo de API de OpenSearch / Elasticsearch
+
+El repositorio [`elasticsearch-operations-postman`](https://github.com/UnirCs/elasticsearch-operations-postman) es un buen recurso para familiarizarse con la API de OpenSearch sin instalaciones adicionales.
+
+Incluye instrucciones para crear un clúster de prueba y una colección de Postman con operaciones habituales de OpenSearch / Elasticsearch.
+
 ## Consumo de Back-End desde Postman
 
 Para probar los servicios back-end de forma directa puedes importar la colección de Postman incluida en este repositorio:
@@ -49,4 +55,3 @@ Este microservicio es una **versión modificada de `back-end-supplies-catalogue`
 4. **Gateway Secured**
 5. **Catalogue (Elasticsearch)**, **Orders & Events** y **Communications**
 6. **Front-end**
-
