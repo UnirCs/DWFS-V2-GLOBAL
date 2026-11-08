@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    background: #f2f2f5;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+h1 {
+    grid-column: 1 / -1;
+    font-size: 24px;
+    margin: 0;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.hijo {
+    margin-top: 16px;
+    border-left: 4px solid #219bc3;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+button {
+    border: 1px solid #219bc3;
+    background: #fff;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.registro ol {
+    font-family: monospace;
+    font-size: 13px;
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.registro-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.accion {
+    list-style: none;
+    margin: 10px 0 2px -28px;
+    font-weight: 700;
+}
+
+li.montaje {
+    color: #1a7f37;
+}
+
+li.desmontaje {
+    color: #b42318;
+}
+
+li.aviso {
+    color: #b54708;
+}
