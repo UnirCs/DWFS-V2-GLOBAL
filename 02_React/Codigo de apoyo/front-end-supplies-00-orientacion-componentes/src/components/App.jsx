@@ -4,6 +4,7 @@ import Footer from "./Footer/Footer.jsx";
 import Menu from "./Menu/Menu.jsx";
 import MainContentFragmentExplicito from "./MainContent/MainContentFragmentExplicito.jsx";
 import MenuProps from "./Menu/MenuProps.jsx";
+import MainContentFragmentImplicito from "./MainContent/MainContentFragmentImplicito.jsx";
 
 export default function App() {
 
@@ -14,9 +15,9 @@ export default function App() {
             <MenuProps backgroundColor="red"/>
             {/* <MenuPropsDestructuring backgroundColor="red"/> */}
 
-            { /* <MainContent/> */}
-            <MainContentFragmentExplicito/>
-            {/* <MainContentFragmentImplicito/> */}
+            {  /* <MainContent/> */ }
+            { /* <MainContentFragmentExplicito/> */}
+            { <MainContentFragmentImplicito/> }
 
             <Footer/>
         </div>
