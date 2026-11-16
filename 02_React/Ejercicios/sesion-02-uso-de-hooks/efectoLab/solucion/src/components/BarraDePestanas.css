@@ -1,0 +1,32 @@
+.pestanas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.4rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.pestanas__boton {
+  flex: 1 1 auto;
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: calc(var(--radius) - 3px);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+
+.pestanas__boton:hover {
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.pestanas__boton--activa {
+  background: var(--bg-surface-alt);
+  border-color: var(--primary);
+  color: var(--text);
+}

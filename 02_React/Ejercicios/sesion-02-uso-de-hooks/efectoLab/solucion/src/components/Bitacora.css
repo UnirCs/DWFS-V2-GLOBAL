@@ -1,0 +1,111 @@
+.bitacora {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: sticky;
+  top: 1rem;
+}
+
+.bitacora__cabecera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-surface-alt);
+}
+
+.bitacora__cabecera h2 {
+  font-size: 1rem;
+}
+
+.bitacora__limpiar {
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.bitacora__limpiar:hover {
+  color: var(--text);
+  border-color: var(--primary);
+}
+
+.bitacora__lista {
+  list-style: none;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.bitacora__entrada {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+  padding: 0.35rem 0.5rem;
+  border-left: 3px solid var(--border);
+  border-radius: 4px;
+  background: var(--bg-surface-alt);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.bitacora__hora {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.bitacora__entrada--montaje {
+  border-left-color: var(--exito);
+}
+
+.bitacora__entrada--desmontaje {
+  border-left-color: var(--peligro);
+}
+
+.bitacora__entrada--efecto {
+  border-left-color: var(--primary);
+}
+
+.bitacora__entrada--limpieza {
+  border-left-color: var(--violeta);
+}
+
+.bitacora__entrada--guardado {
+  border-left-color: var(--aviso);
+}
+
+.bitacora__entrada--exito {
+  border-left-color: var(--exito);
+  background: color-mix(in srgb, var(--exito) 14%, var(--bg-surface-alt));
+}
+
+.bitacora__entrada--aviso {
+  border-left-color: var(--aviso);
+}
+
+.bitacora__vacia {
+  padding: 0.75rem 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.bitacora__pie {
+  padding: 0.6rem 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}

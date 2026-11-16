@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { AppContext } from "./AppContext";
+import { AppContext } from "./AppContext.js";
 
 // Provider: componente que envuelve la app y expone los valores globales
 export function AppProvider({ children }) {

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AppContext } from "../context/global/AppContext";
+import { AppContext } from "../context/global/AppContext.js";
 
 // Hook de conveniencia para consumir el contexto global
 export function useGlobalContext() {

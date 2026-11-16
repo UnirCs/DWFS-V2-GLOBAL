@@ -52,7 +52,7 @@ export default function App() {
                     </button>
                 </div>
                 {visible && (
-                    <Hijo key={clave} contadorUno={contadorUno}
+                    <Hijo contadorUno={contadorUno}
                           filtrosInline={filtrosInline} filtrosMemo={filtrosMemo}
                           onCambioInline={onCambioInline} onCambioCallback={onCambioCallback}/>
                 )}

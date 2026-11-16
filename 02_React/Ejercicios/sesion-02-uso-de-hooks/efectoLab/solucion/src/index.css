@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Tema oscuro (por defecto) ── */
+:root {
+  --bg: #0d1017;
+  --bg-surface: #161b25;
+  --bg-surface-alt: #1f2634;
+  --border: #2b3344;
+  --text: #e8ecf4;
+  --text-muted: #8591a8;
+  --primary: #4fb3d9;
+  --primary-dark: #2d8fb5;
+  --exito: #3fb57a;
+  --aviso: #e0a33e;
+  --peligro: #e05c5c;
+  --violeta: #9b7bf0;
+  --radius: 10px;
+  --shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  --transition: 0.2s ease;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+/* ── Tema claro: solo sobreescribimos lo que cambia ── */
+:root.claro {
+  --bg: #eef1f6;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #e3e8f0;
+  --border: #ccd4e0;
+  --text: #161d2a;
+  --text-muted: #5c6880;
+  --primary: #1d7fa5;
+  --primary-dark: #15607d;
+  --shadow: 0 6px 24px rgba(20, 30, 50, 0.12);
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+code,
+kbd {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  background: var(--bg-surface-alt);
+  border-radius: 4px;
+  padding: 0.1rem 0.35rem;
+}
